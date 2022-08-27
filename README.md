@@ -2,7 +2,7 @@
 
 An inflation linked asset swap is a security in which a stream of inflation linked cash flows, that match the payments of an inflation linked bond, are swapped for a stream of cash flows that pay LIBOR plus a spread, or a fixed rate.
 
-The valuation of inflation linked asset swap considers only the case where the cash flows matching the bond coupon and principal repayments are linked to inflation by a scaling factor. When the indexation lag for the inflation swap is not the same as that for the zero coupon swaps there is an additional convexity correction.
+The valuation of inflation linked asset swap considers only the case where the cash flows matching the bond coupon (see https://finpricing.com/lib/FiBondCoupon.html) and principal repayments are linked to inflation by a scaling factor. When the indexation lag for the inflation swap is not the same as that for the zero coupon swaps there is an additional convexity correction.
 
 The valuation of a floating LIBOR stream is standard and this report discusses only the valuation of inflation linked leg. The coupon cash flows of the inflation linked leg are given and the principal repayment at time Tn is provided.
 
@@ -30,13 +30,4 @@ R(Convx) = max(0, MtM(0)− MtM(Convx))
 
 where MtM(Convx) is portfolio MtM with convexity adjustment.
 
-
-
-Reference:
-
-https://finpricing.com/lib/EqVariance.html
-
-https://zenodo.org/record/6607394#.YpjM_KgpBD8
-
-https://zenodo.org/record/6607394/files/inflationSwap.pdf
 
